@@ -72,4 +72,5 @@
     <string name="tv_compose_navigation_example">Compose Navigation</string>
     <string name="title_activity_simple_text">SimpleTextActivity</string>
     <string name="title_activity_alert_dialog">AlertDialogActivity</string>
+    <string name="title_activity_layout_modifier">LayoutModifierActivity</string>
 </resources>

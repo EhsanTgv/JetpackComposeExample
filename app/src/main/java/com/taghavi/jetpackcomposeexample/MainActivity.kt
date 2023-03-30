@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 
@@ -104,11 +105,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startThemeExample(view: View) {
 //        startActivity(Intent(this, DarkModeActivity::class.java))
 //    }
-//
-//    fun startLayoutModifierExample(view: View) {
-//        startActivity(Intent(this, LayoutModifierActivity::class.java))
-//    }
-//
+
+    fun startLayoutModifierExample(view: View) {
+        startActivity(Intent(this, LayoutModifierActivity::class.java))
+    }
+
 //    fun startProcessDeathExample(view: View) {
 //        startActivity(Intent(this, ProcessDeathActivity::class.java))
 //    }
