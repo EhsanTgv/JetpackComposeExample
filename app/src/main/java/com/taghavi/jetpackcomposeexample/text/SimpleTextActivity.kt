@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.taghavi.jetpackcomposeexample.text.ui.theme.JetpackComposeExampleTheme
+import com.taghavi.jetpackcomposeexample.ui.theme.JetpackComposeExampleTheme
 
 class SimpleTextActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +37,6 @@ fun SimpleText(displayText: String) {
 
 @Preview()
 @Composable
-fun GreetingPreview() {
+fun SimpleTextPreview() {
     SimpleText("This is the Learn Jetpack Compose By Example tutorial")
 }
