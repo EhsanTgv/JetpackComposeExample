@@ -10,8 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JepackComposeExample"
+        android:theme="@style/Theme.JetpackComposeExample"
         tools:targetApi="31">
+        <activity
+            android:name=".text.SimpleTextActivity"
+            android:exported="false"
+            android:label="@string/title_activity_simple_text"
+            android:theme="@style/Theme.JetpackComposeExample" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

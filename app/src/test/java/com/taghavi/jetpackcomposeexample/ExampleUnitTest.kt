@@ -1,4 +1,4 @@
-package com.taghavi.jepackcomposeexample
+package com.taghavi.jetpackcomposeexample
 
 import org.junit.Test
 
