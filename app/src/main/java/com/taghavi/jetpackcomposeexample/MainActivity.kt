@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
+import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 
 class MainActivity : AppCompatActivity() {
@@ -18,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, SimpleTextActivity::class.java))
     }
 
-//    fun startCustomTextExample(view: View) {
-//        startActivity(Intent(this, CustomTextActivity::class.java))
-//    }
-//
+    fun startCustomTextExample(view: View) {
+        startActivity(Intent(this, CustomTextActivity::class.java))
+    }
+
 //    fun startVerticalScrollableExample(view: View) {
 //        startActivity(Intent(this, VerticalScrollableActivity::class.java))
 //    }
