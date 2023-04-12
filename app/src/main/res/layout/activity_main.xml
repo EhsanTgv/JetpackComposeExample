@@ -125,24 +125,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-        <!--        <androidx.cardview.widget.CardView-->
-        <!--            android:id="@+id/load_drawer_example"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="@dimen/cardview_height"-->
-        <!--            android:layout_marginTop="@dimen/default_padding"-->
-        <!--            android:onClick="startDrawerExample"-->
-        <!--            android:padding="@dimen/default_padding"-->
-        <!--            app:cardBackgroundColor="@color/colorPrimary"-->
-        <!--            app:cardCornerRadius="@dimen/card_corner_radius">-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_drawer_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startDrawerExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-        <!--            <TextView-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:fontFamily="monospace"-->
-        <!--                android:text="@string/tv_drawer_component_example"-->
-        <!--                android:textColor="@color/white" />-->
-        <!--        </androidx.cardview.widget.CardView>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_drawer_component_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <!--        <androidx.cardview.widget.CardView-->
         <!--            android:id="@+id/load_button_example"-->

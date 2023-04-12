@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
+import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 
@@ -39,10 +40,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, AlertDialogActivity::class.java))
     }
 
-//    fun startDrawerExample(view: View) {
-//        startActivity(Intent(this, DrawerAppActivity::class.java))
-//    }
-//
+    fun startDrawerExample(view: View) {
+        startActivity(Intent(this, DrawerAppActivity::class.java))
+    }
+
 //    fun startButtonsExample(view: View) {
 //        startActivity(Intent(this, ButtonActivity::class.java))
 //    }
