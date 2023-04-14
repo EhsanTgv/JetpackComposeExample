@@ -7,6 +7,7 @@ import android.view.View
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
+import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 
@@ -63,11 +64,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startAutofillTextExample(view: View) {
 //        startActivity(Intent(this, TextFieldActivity::class.java))
 //    }
-//
-//    fun startStackExample(view: View) {
-//        startActivity(Intent(this, StackActivity::class.java))
-//    }
-//
+
+    fun startStackExample(view: View) {
+        startActivity(Intent(this, StackActivity::class.java))
+    }
+
 //    fun startViewAlignExample(view: View) {
 //        startActivity(Intent(this, ViewLayoutConfigurationsActivity::class.java))
 //    }
