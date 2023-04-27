@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.taghavi.jetpackcomposeexample.animation.Animation1Activity
+import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
@@ -94,10 +95,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, Animation1Activity::class.java))
     }
 
-//    fun startAnimation2Example(view: View) {
-//        startActivity(Intent(this, Animation2Activity::class.java))
-//    }
-//
+    fun startAnimation2Example(view: View) {
+        startActivity(Intent(this, Animation2Activity::class.java))
+    }
+
 //    fun startTextInlineContentExample(view: View) {
 //        startActivity(Intent(this, TextAnimationActivity::class.java))
 //    }
