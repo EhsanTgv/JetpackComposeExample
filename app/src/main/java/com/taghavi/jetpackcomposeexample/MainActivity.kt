@@ -12,6 +12,7 @@ import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
+import com.taghavi.jetpackcomposeexample.theme.DarkModeActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -106,10 +107,10 @@ class MainActivity : AppCompatActivity() {
 //    fun startListAnimation(view: View) {
 //        startActivity(Intent(this, ListAnimationActivity::class.java))
 //    }
-//
-//    fun startThemeExample(view: View) {
-//        startActivity(Intent(this, DarkModeActivity::class.java))
-//    }
+
+    fun startThemeExample(view: View) {
+        startActivity(Intent(this, DarkModeActivity::class.java))
+    }
 
     fun startLayoutModifierExample(view: View) {
         startActivity(Intent(this, LayoutModifierActivity::class.java))
