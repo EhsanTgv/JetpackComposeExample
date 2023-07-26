@@ -10,6 +10,7 @@ import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
+import com.taghavi.jetpackcomposeexample.state.StateActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 import com.taghavi.jetpackcomposeexample.theme.DarkModeActivity
@@ -51,11 +52,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startButtonsExample(view: View) {
 //        startActivity(Intent(this, ButtonActivity::class.java))
 //    }
-//
-//    fun startStateExample(view: View) {
-//        startActivity(Intent(this, StateActivity::class.java))
-//    }
-//
+
+    fun startStateExample(view: View) {
+        startActivity(Intent(this, StateActivity::class.java))
+    }
+
 //    fun startCustomViewExample(view: View) {
 //        startActivity(Intent(this, CustomViewActivity::class.java))
 //    }
