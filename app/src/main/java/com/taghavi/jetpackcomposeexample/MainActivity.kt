@@ -10,6 +10,7 @@ import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
+import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
@@ -117,10 +118,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, LayoutModifierActivity::class.java))
     }
 
-//    fun startProcessDeathExample(view: View) {
-//        startActivity(Intent(this, ProcessDeathActivity::class.java))
-//    }
-//
+    fun startProcessDeathExample(view: View) {
+        startActivity(Intent(this, ProcessDeathActivity::class.java))
+    }
+
 //    fun startLiveDataExample(view: View) {
 //        startActivity(Intent(this, LiveDataActivity::class.java))
 //    }

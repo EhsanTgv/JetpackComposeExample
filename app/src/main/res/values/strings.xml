@@ -76,4 +76,5 @@
     <string name="title_activity_stack">StackActivity</string>
     <string name="title_activity_animation1">Animation1Activity</string>
     <string name="title_activity_animation2">Animation2Activity</string>
+    <string name="title_activity_process_death">ProcessDeathActivity</string>
 </resources>
