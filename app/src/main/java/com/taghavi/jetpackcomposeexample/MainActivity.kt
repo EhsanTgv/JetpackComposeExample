@@ -12,6 +12,7 @@ import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
+import com.taghavi.jetpackcomposeexample.state.livedata.LiveDataActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
 import com.taghavi.jetpackcomposeexample.theme.DarkModeActivity
@@ -122,10 +123,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ProcessDeathActivity::class.java))
     }
 
-//    fun startLiveDataExample(view: View) {
-//        startActivity(Intent(this, LiveDataActivity::class.java))
-//    }
-//
+    fun startLiveDataExample(view: View) {
+        startActivity(Intent(this, LiveDataActivity::class.java))
+    }
+
 //    fun startFlowRowExample(view: View) {
 //        startActivity(Intent(this, FlowRowActivity::class.java))
 //    }
