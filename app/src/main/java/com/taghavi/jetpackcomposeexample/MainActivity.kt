@@ -12,6 +12,7 @@ import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
+import com.taghavi.jetpackcomposeexample.state.coroutine.CoroutineFlowActivity
 import com.taghavi.jetpackcomposeexample.state.livedata.LiveDataActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
@@ -134,11 +135,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startShadowExample(view: View) {
 //        startActivity(Intent(this, ShadowActivity::class.java))
 //    }
-//
-//    fun startCoroutineFlowExample(view: View) {
-//        startActivity(Intent(this, CoroutineFlowActivity::class.java))
-//    }
-//
+
+    fun startCoroutineFlowExample(view: View) {
+        startActivity(Intent(this, CoroutineFlowActivity::class.java))
+    }
+
 //    fun startComposeWithClassicAndroidExample(view: View) {
 //        startActivity(Intent(this, ComposeInClassicAndroidActivity::class.java))
 //    }
