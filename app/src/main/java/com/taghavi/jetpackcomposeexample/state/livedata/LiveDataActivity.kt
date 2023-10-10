@@ -57,7 +57,7 @@ class LiveDataActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val viewModel = ViewModelProvider(this).get(SuperheroesViewModel::class.java)
+        val viewModel = ViewModelProvider(this)[SuperheroesViewModel::class.java]
         setContent {
             LiveDataComponent(viewModel.superheroes)
         }

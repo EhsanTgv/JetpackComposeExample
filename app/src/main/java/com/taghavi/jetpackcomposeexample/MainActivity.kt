@@ -12,6 +12,7 @@ import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
+import com.taghavi.jetpackcomposeexample.state.backpress.BackPressActivity
 import com.taghavi.jetpackcomposeexample.state.coroutine.CoroutineFlowActivity
 import com.taghavi.jetpackcomposeexample.state.livedata.LiveDataActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
@@ -147,11 +148,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startMeasuringScaleExample(view: View) {
 //        startActivity(Intent(this, MeasuringScaleActivity::class.java))
 //    }
-//
-//    fun startBackPressExample(view: View) {
-//        startActivity(Intent(this, BackPressActivity::class.java))
-//    }
-//
+
+    fun startBackPressExample(view: View) {
+        startActivity(Intent(this, BackPressActivity::class.java))
+    }
+
 //    fun startZoomableExample(view: View) {
 //        startActivity(Intent(this, ZoomableActivity::class.java))
 //    }
