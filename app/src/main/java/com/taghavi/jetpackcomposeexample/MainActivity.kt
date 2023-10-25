@@ -9,6 +9,7 @@ import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
+import com.taghavi.jetpackcomposeexample.material.MaterialActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
@@ -80,11 +81,11 @@ class MainActivity : AppCompatActivity() {
 //    fun startViewAlignExample(view: View) {
 //        startActivity(Intent(this, ViewLayoutConfigurationsActivity::class.java))
 //    }
-//
-//    fun startMaterialDesignExample(view: View) {
-//        startActivity(Intent(this, MaterialActivity::class.java))
-//    }
-//
+
+    fun startMaterialDesignExample(view: View) {
+        startActivity(Intent(this, MaterialActivity::class.java))
+    }
+
 //    fun startFixedActionButtonExample(view: View) {
 //        startActivity(Intent(this, FixedActionButtonActivity::class.java))
 //    }
