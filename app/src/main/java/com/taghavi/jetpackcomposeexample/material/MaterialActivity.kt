@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -13,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ListItem
 import androidx.compose.material3.Card
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -30,6 +33,16 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a simple Material Card")
                     MaterialCardComponent()
+                }
+
+                item {
+                    TitleComponent(title = "This is a loading progress indicator")
+                    MaterialLinearProgressIndicatorComponent()
+                }
+
+                item {
+                    TitleComponent(title = "This is a determinate progress indicator")
+                    MaterialDeterminateLinearProgressIndicatorComponent()
                 }
             }
         }
@@ -60,5 +73,33 @@ fun MaterialCardComponent() {
                 }
             }
         )
+    }
+}
+
+@Composable
+fun MaterialLinearProgressIndicatorComponent() {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
+        Row(modifier = Modifier.padding(16.dp)) {
+            LinearProgressIndicator()
+        }
+    }
+}
+
+@Composable
+fun MaterialDeterminateLinearProgressIndicatorComponent() {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
+        Row(modifier = Modifier.padding(16.dp)) {
+            LinearProgressIndicator(progress = 0.3f)
+        }
     }
 }
