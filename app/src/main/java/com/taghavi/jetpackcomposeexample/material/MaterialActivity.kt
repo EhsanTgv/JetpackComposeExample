@@ -10,14 +10,17 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ListItem
 import androidx.compose.material3.Card
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
@@ -43,6 +46,14 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a determinate progress indicator")
                     MaterialDeterminateLinearProgressIndicatorComponent()
+                }
+                item {
+                    TitleComponent(title = "This is a loading circular progress indicator")
+                    MaterialCircularProgressIndicator()
+                }
+                item {
+                    TitleComponent(title = "This is a determinate circular progress indicator")
+                    MaterialDeterminateCircularProgressIndicatorComponent()
                 }
             }
         }
@@ -101,5 +112,32 @@ fun MaterialDeterminateLinearProgressIndicatorComponent() {
         Row(modifier = Modifier.padding(16.dp)) {
             LinearProgressIndicator(progress = 0.3f)
         }
+    }
+}
+
+@Composable
+fun MaterialCircularProgressIndicator() {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth(),
+    ) {
+        CircularProgressIndicator(modifier = Modifier.wrapContentWidth(Alignment.CenterHorizontally))
+    }
+}
+
+@Composable
+fun MaterialDeterminateCircularProgressIndicatorComponent() {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
+        CircularProgressIndicator(
+            progress = 0.55f,
+            modifier = Modifier.wrapContentWidth(Alignment.CenterHorizontally)
+        )
     }
 }
