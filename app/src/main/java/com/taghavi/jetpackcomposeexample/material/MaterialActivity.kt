@@ -15,6 +15,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ListItem
+import androidx.compose.material.Slider
 import androidx.compose.material.Snackbar
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
@@ -22,6 +23,11 @@ import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -61,6 +67,14 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a material Snackbar")
                     MaterialSnackbarComponent()
+                }
+                item {
+                    TitleComponent(title = "this is a non-discrete slider")
+                    MaterialContinousSliderComponent()
+                }
+                item {
+                    TitleComponent(title = "this is a discrete slider")
+                    MaterialDiscreteSliderComponent()
                 }
             }
         }
@@ -164,4 +178,39 @@ fun MaterialSnackbarComponent() {
             }
         )
     }
+}
+
+@Composable
+fun MaterialContinousSliderComponent() {
+    var sliderValue by remember { mutableFloatStateOf(0f) }
+
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier.padding(8.dp),
+    ) {
+        Slider(value = sliderValue, onValueChange = { newValue ->
+            sliderValue = newValue
+        })
+    }
+}
+
+@Composable
+fun MaterialDiscreteSliderComponent() {
+    var sliderValue by remember { mutableFloatStateOf(0f) }
+
+    Card(shape = RoundedCornerShape(4.dp), modifier = Modifier.padding(8.dp)) {
+        Slider(
+            value = sliderValue,
+            valueRange = 0f..10f,
+            steps = 8,
+            onValueChange = { newValue ->
+                sliderValue = newValue
+            },
+        )
+    }
+
+    Text(
+        text = "Slider value is %.1f".format(sliderValue),
+        modifier = Modifier.padding(8.dp)
+    )
 }
