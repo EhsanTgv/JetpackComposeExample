@@ -23,6 +23,7 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -33,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role.Companion.Checkbox
+import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.taghavi.jetpackcomposeexample.R
@@ -81,6 +83,10 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a checkbox that represents two states")
                     MaterialCheckboxComponent()
+                }
+                item {
+                    TitleComponent(title = "This is a checkbox that represent three state")
+                    MaterialTriStateCheckboxComponent()
                 }
             }
         }
@@ -235,6 +241,35 @@ fun MaterialCheckboxComponent() {
             Checkbox(
                 checked = checked,
                 onCheckedChange = { checked = !checked }
+            )
+            Text(text = "Use Jetpack Compose", modifier = Modifier.padding(start = 8.dp))
+        }
+    }
+}
+
+@Composable
+fun MaterialTriStateCheckboxComponent() {
+    val toggleableStateArray = listOf(
+        ToggleableState.Off,
+        ToggleableState.On,
+        ToggleableState.Indeterminate
+    )
+
+    var counter by remember { mutableStateOf(0) }
+
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    )
+    {
+        Row(modifier = Modifier.padding(16.dp)){
+            TriStateCheckbox(
+                state = toggleableStateArray[counter%3],
+                onClick = {
+                    counter++
+                }
             )
             Text(text = "Use Jetpack Compose", modifier = Modifier.padding(start = 8.dp))
         }
