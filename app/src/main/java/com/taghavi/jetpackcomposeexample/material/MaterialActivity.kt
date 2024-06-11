@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Checkbox
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ListItem
 import androidx.compose.material.Slider
@@ -31,6 +32,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.Role.Companion.Checkbox
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.taghavi.jetpackcomposeexample.R
@@ -75,6 +77,10 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "this is a discrete slider")
                     MaterialDiscreteSliderComponent()
+                }
+                item {
+                    TitleComponent(title = "This is a checkbox that represents two states")
+                    MaterialCheckboxComponent()
                 }
             }
         }
@@ -213,4 +219,24 @@ fun MaterialDiscreteSliderComponent() {
         text = "Slider value is %.1f".format(sliderValue),
         modifier = Modifier.padding(8.dp)
     )
+}
+
+@Composable
+fun MaterialCheckboxComponent() {
+    var checked by remember { mutableStateOf(false) }
+
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
+        Row(modifier = Modifier.padding(16.dp)) {
+            Checkbox(
+                checked = checked,
+                onCheckedChange = { checked = !checked }
+            )
+            Text(text = "Use Jetpack Compose", modifier = Modifier.padding(start = 8.dp))
+        }
+    }
 }
