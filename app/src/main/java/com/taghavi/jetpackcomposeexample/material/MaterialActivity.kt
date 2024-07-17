@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Checkbox
 import androidx.compose.material.ExperimentalMaterialApi
@@ -22,6 +23,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.runtime.Composable
@@ -87,6 +89,10 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a checkbox that represent three state")
                     MaterialTriStateCheckboxComponent()
+                }
+                item {
+                    TitleComponent(title = "This is a radio button")
+                    MaterialRadioButtonComponent()
                 }
             }
         }
@@ -264,14 +270,53 @@ fun MaterialTriStateCheckboxComponent() {
             .fillMaxWidth()
     )
     {
-        Row(modifier = Modifier.padding(16.dp)){
+        Row(modifier = Modifier.padding(16.dp)) {
             TriStateCheckbox(
-                state = toggleableStateArray[counter%3],
+                state = toggleableStateArray[counter % 3],
                 onClick = {
                     counter++
                 }
             )
             Text(text = "Use Jetpack Compose", modifier = Modifier.padding(start = 8.dp))
+        }
+    }
+}
+
+@Composable
+fun MaterialRadioButtonComponent() {
+    var selected by remember { mutableStateOf("Android") }
+
+    val radioGroupOptions = listOf("Android", "iOS", "Windows")
+
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
+        val onSelectedChange = { text: String ->
+            selected = text
+        }
+        Column {
+            radioGroupOptions.forEach { text ->
+                Row(
+                    Modifier
+                        .fillMaxWidth()
+                        .selectable(
+                            selected = (selected == text),
+                            onClick = { onSelectedChange(text) }
+                        )
+                ) {
+                    RadioButton(
+                        selected = (selected == text),
+                        onClick = { onSelectedChange(text) }
+                    )
+                    Text(
+                        text = text,
+                        modifier = Modifier.padding(start = 16.dp)
+                    )
+                }
+            }
         }
     }
 }
