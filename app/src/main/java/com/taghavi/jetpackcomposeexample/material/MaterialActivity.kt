@@ -1,9 +1,11 @@
 package com.taghavi.jetpackcomposeexample.material
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,12 +21,12 @@ import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.ListItem
 import androidx.compose.material.Slider
 import androidx.compose.material.Snackbar
-import androidx.compose.material3.Card
+import androidx.compose.material.Card
+import androidx.compose.material.Text
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
-import androidx.compose.material3.Text
 import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -34,11 +36,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.Role.Companion.Checkbox
 import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.taghavi.jetpackcomposeexample.R
 import com.taghavi.jetpackcomposeexample.state.TitleComponent
 
@@ -93,6 +97,11 @@ class MaterialActivity : AppCompatActivity() {
                 item {
                     TitleComponent(title = "This is a radio button")
                     MaterialRadioButtonComponent()
+                }
+
+                item {
+                    TitleComponent("This is how you add a ripple effect to a view")
+                    MaterialRippleComponent()
                 }
             }
         }
@@ -317,6 +326,31 @@ fun MaterialRadioButtonComponent() {
                     )
                 }
             }
+        }
+    }
+}
+
+@Composable
+fun MaterialRippleComponent() {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth(),
+    ) {
+        Column(
+            modifier = Modifier
+                .clickable(onClick = {})
+                .background(
+                    color = Color.LightGray,
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ) {
+            Text(
+                text = "Click Me",
+                modifier = Modifier.padding(16.dp),
+                style = TextStyle(fontSize = 12.sp, fontFamily = FontFamily.Serif)
+            )
         }
     }
 }
