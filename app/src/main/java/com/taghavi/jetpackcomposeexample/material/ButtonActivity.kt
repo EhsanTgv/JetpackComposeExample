@@ -27,6 +27,9 @@ class ButtonActivity : ComponentActivity() {
             Column(modifier = Modifier.fillMaxSize()) {
                 SimpleButtonComponent()
                 SimpleButtonWithBorderComponent()
+                RoundedCornerButtonComponent()
+                OutlinedButtonComponent()
+                TextButtonComponent()
             }
         }
     }

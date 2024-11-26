@@ -9,6 +9,7 @@ import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.BottomNavigationActivity
+import com.taghavi.jetpackcomposeexample.material.ButtonActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.material.FixedActionButtonActivity
 import com.taghavi.jetpackcomposeexample.material.MaterialActivity
@@ -56,9 +57,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, DrawerAppActivity::class.java))
     }
 
-//    fun startButtonsExample(view: View) {
-//        startActivity(Intent(this, ButtonActivity::class.java))
-//    }
+    fun startButtonsExample(view: View) {
+        startActivity(Intent(this, ButtonActivity::class.java))
+    }
 
     fun startStateExample(view: View) {
         startActivity(Intent(this, StateActivity::class.java))
