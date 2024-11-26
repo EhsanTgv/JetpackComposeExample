@@ -13,6 +13,7 @@ import com.taghavi.jetpackcomposeexample.material.ButtonActivity
 import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.material.FixedActionButtonActivity
 import com.taghavi.jetpackcomposeexample.material.MaterialActivity
+import com.taghavi.jetpackcomposeexample.material.ShadowActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
@@ -136,10 +137,10 @@ class MainActivity : AppCompatActivity() {
 //    fun startFlowRowExample(view: View) {
 //        startActivity(Intent(this, FlowRowActivity::class.java))
 //    }
-//
-//    fun startShadowExample(view: View) {
-//        startActivity(Intent(this, ShadowActivity::class.java))
-//    }
+
+    fun startShadowExample(view: View) {
+        startActivity(Intent(this, ShadowActivity::class.java))
+    }
 
     fun startCoroutineFlowExample(view: View) {
         startActivity(Intent(this, CoroutineFlowActivity::class.java))
