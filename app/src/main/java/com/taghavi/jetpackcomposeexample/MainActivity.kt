@@ -22,6 +22,7 @@ import com.taghavi.jetpackcomposeexample.state.coroutine.CoroutineFlowActivity
 import com.taghavi.jetpackcomposeexample.state.livedata.LiveDataActivity
 import com.taghavi.jetpackcomposeexample.text.CustomTextActivity
 import com.taghavi.jetpackcomposeexample.text.SimpleTextActivity
+import com.taghavi.jetpackcomposeexample.text.TextFieldActivity
 import com.taghavi.jetpackcomposeexample.theme.DarkModeActivity
 
 class MainActivity : AppCompatActivity() {
@@ -73,10 +74,10 @@ class MainActivity : AppCompatActivity() {
 //    fun startCustomViewPaintExample(view: View) {
 //        startActivity(Intent(this, CustomViewPaintActivity::class.java))
 //    }
-//
-//    fun startAutofillTextExample(view: View) {
-//        startActivity(Intent(this, TextFieldActivity::class.java))
-//    }
+
+    fun startAutofillTextExample(view: View) {
+        startActivity(Intent(this, TextFieldActivity::class.java))
+    }
 
     fun startStackExample(view: View) {
         startActivity(Intent(this, StackActivity::class.java))
