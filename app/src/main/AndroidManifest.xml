@@ -13,6 +13,11 @@
         android:theme="@style/Theme.JetpackComposeExample"
         tools:targetApi="31">
         <activity
+            android:name=".animation.TextAnimationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_text_animation"
+            android:theme="@style/Theme.JetpackComposeExample" />
+        <activity
             android:name=".text.TextFieldActivity"
             android:exported="false"
             android:label="@string/title_activity_text_field"
