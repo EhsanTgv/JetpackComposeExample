@@ -7,6 +7,7 @@ import android.view.View
 import com.taghavi.jetpackcomposeexample.animation.Animation1Activity
 import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
+import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.BottomNavigationActivity
@@ -47,10 +48,10 @@ class MainActivity : AppCompatActivity() {
 //    fun startHorizontalScrollableExample(view: View) {
 //        startActivity(Intent(this, HorizontalScrollableActivity::class.java))
 //    }
-//
-//    fun starLoadImageExample(view: View) {
-//        startActivity(Intent(this, ImageActivity::class.java))
-//    }
+
+    fun starLoadImageExample(view: View) {
+        startActivity(Intent(this, ImageActivity::class.java))
+    }
 
     fun startAlertDialogExample(view: View) {
         startActivity(Intent(this, AlertDialogActivity::class.java))
