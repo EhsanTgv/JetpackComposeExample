@@ -15,6 +15,11 @@
         android:theme="@style/Theme.JetpackComposeExample"
         tools:targetApi="31">
         <activity
+            android:name=".scrollers.HorizontalScrollableActivity"
+            android:exported="false"
+            android:label="@string/title_activity_horizontal_scrollable"
+            android:theme="@style/Theme.JetpackComposeExample" />
+        <activity
             android:name=".scrollers.VerticalScrollableActivity"
             android:exported="false"
             android:label="@string/title_activity_vertical_scrollable"
