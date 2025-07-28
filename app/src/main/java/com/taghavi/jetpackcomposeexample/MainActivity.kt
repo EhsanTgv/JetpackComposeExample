@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.taghavi.jetpackcomposeexample.animation.Animation1Activity
 import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
+import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
@@ -117,9 +118,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, TextAnimationActivity::class.java))
     }
 
-//    fun startListAnimation(view: View) {
-//        startActivity(Intent(this, ListAnimationActivity::class.java))
-//    }
+    fun startListAnimation(view: View) {
+        startActivity(Intent(this, ListAnimationActivity::class.java))
+    }
 
     fun startThemeExample(view: View) {
         startActivity(Intent(this, DarkModeActivity::class.java))
