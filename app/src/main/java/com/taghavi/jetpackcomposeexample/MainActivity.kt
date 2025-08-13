@@ -10,6 +10,7 @@ import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
+import com.taghavi.jetpackcomposeexample.layout.ViewLayoutConfigurationsActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
 import com.taghavi.jetpackcomposeexample.material.BottomNavigationActivity
 import com.taghavi.jetpackcomposeexample.material.ButtonActivity
@@ -86,9 +87,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, StackActivity::class.java))
     }
 
-//    fun startViewAlignExample(view: View) {
-//        startActivity(Intent(this, ViewLayoutConfigurationsActivity::class.java))
-//    }
+    fun startViewAlignExample(view: View) {
+        startActivity(Intent(this, ViewLayoutConfigurationsActivity::class.java))
+    }
 
     fun startMaterialDesignExample(view: View) {
         startActivity(Intent(this, MaterialActivity::class.java))

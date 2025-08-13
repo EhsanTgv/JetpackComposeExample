@@ -87,4 +87,6 @@
     <string name="title_activity_text_animation">TextAnimationActivity</string>
     <string name="title_activity_vertical_scrollable">VerticalScrollableActivity</string>
     <string name="title_activity_list_animation">ListAnimationActivity</string>
+    <string name="title_activity_view_layout_configurations">ViewLayoutConfigurationsActivity
+    </string>
 </resources>

@@ -15,6 +15,11 @@
         android:theme="@style/Theme.JetpackComposeExample"
         tools:targetApi="31">
         <activity
+            android:name=".layout.ViewLayoutConfigurationsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_view_layout_configurations"
+            android:theme="@style/Theme.JetpackComposeExample" />
+        <activity
             android:name=".animation.ListAnimationActivity"
             android:exported="false"
             android:label="@string/title_activity_list_animation"
