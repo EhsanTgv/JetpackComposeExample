@@ -8,6 +8,7 @@ import com.taghavi.jetpackcomposeexample.animation.Animation1Activity
 import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
+import com.taghavi.jetpackcomposeexample.cutomView.CustomViewActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.layout.ViewLayoutConfigurationsActivity
@@ -71,10 +72,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, StateActivity::class.java))
     }
 
-//    fun startCustomViewExample(view: View) {
-//        startActivity(Intent(this, CustomViewActivity::class.java))
-//    }
-//
+    fun startCustomViewExample(view: View) {
+        startActivity(Intent(this, CustomViewActivity::class.java))
+    }
+
 //    fun startCustomViewPaintExample(view: View) {
 //        startActivity(Intent(this, CustomViewPaintActivity::class.java))
 //    }

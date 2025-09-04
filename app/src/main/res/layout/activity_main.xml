@@ -87,24 +87,24 @@
         <!--                android:textColor="@color/white" />-->
         <!--        </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_image_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="starLoadImageExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_image_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="starLoadImageExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_load_image_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_load_image_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_clickable_example"
@@ -144,24 +144,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_button_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="startButtonsExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_button_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startButtonsExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_buttons_component_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_buttons_component_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_state_example"
@@ -182,24 +182,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-        <!--        <androidx.cardview.widget.CardView-->
-        <!--            android:id="@+id/load_custom_view_example"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="@dimen/cardview_height"-->
-        <!--            android:layout_marginTop="@dimen/default_padding"-->
-        <!--            android:onClick="startCustomViewExample"-->
-        <!--            android:padding="@dimen/default_padding"-->
-        <!--            app:cardBackgroundColor="@color/colorPrimary"-->
-        <!--            app:cardCornerRadius="@dimen/card_corner_radius">-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_custom_view_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startCustomViewExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-        <!--            <TextView-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:fontFamily="monospace"-->
-        <!--                android:text="@string/tv_custom_view_example"-->
-        <!--                android:textColor="@color/white" />-->
-        <!--        </androidx.cardview.widget.CardView>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_custom_view_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <!--        <androidx.cardview.widget.CardView-->
         <!--            android:id="@+id/load_custom_view_paint_example"-->
@@ -239,24 +239,24 @@
         <!--                android:textColor="@color/white" />-->
         <!--        </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_autofill_text_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="startAutofillTextExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_autofill_text_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startAutofillTextExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_text_input_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_text_input_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_stack_example"
@@ -277,24 +277,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_text_align_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="startViewAlignExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_text_align_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startViewAlignExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_view_layout_arrangement_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_view_layout_arrangement_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_material_design_example"
@@ -353,24 +353,24 @@
         <!--                android:textColor="@color/white" />-->
         <!--        </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_bottom_navigation_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="startBottomNavigationExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_bottom_navigation_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startBottomNavigationExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_bottom_navigation_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_bottom_navigation_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_animation1_example"
@@ -543,24 +543,24 @@
         <!--                android:textColor="@color/white" />-->
         <!--        </androidx.cardview.widget.CardView>-->
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/load_shadow_example"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/cardview_height"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:onClick="startShadowExample"
-                    android:padding="@dimen/default_padding"
-                    app:cardBackgroundColor="@color/colorPrimary"
-                    app:cardCornerRadius="@dimen/card_corner_radius">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_shadow_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startShadowExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="monospace"
-                        android:text="@string/tv_shadow_example"
-                        android:textColor="@color/white" />
-                </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_shadow_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_coroutine_flow_example"

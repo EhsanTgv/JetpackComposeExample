@@ -89,4 +89,6 @@
     <string name="title_activity_list_animation">ListAnimationActivity</string>
     <string name="title_activity_view_layout_configurations">ViewLayoutConfigurationsActivity
     </string>
+    <string name="title_activity_constraint_layout">ConstraintLayoutActivity</string>
+    <string name="title_activity_custom_view">CustomViewActivity</string>
 </resources>
