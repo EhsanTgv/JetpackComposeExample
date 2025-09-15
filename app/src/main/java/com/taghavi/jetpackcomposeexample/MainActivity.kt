@@ -9,6 +9,7 @@ import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
 import com.taghavi.jetpackcomposeexample.cutomView.CustomViewActivity
+import com.taghavi.jetpackcomposeexample.cutomView.MeasuringScaleActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.layout.ViewLayoutConfigurationsActivity
@@ -155,10 +156,10 @@ class MainActivity : AppCompatActivity() {
 //    fun startComposeWithClassicAndroidExample(view: View) {
 //        startActivity(Intent(this, ComposeInClassicAndroidActivity::class.java))
 //    }
-//
-//    fun startMeasuringScaleExample(view: View) {
-//        startActivity(Intent(this, MeasuringScaleActivity::class.java))
-//    }
+
+    fun startMeasuringScaleExample(view: View) {
+        startActivity(Intent(this, MeasuringScaleActivity::class.java))
+    }
 
     fun startBackPressExample(view: View) {
         startActivity(Intent(this, BackPressActivity::class.java))
