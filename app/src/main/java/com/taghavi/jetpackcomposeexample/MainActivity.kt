@@ -10,6 +10,7 @@ import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
 import com.taghavi.jetpackcomposeexample.cutomView.CustomViewActivity
 import com.taghavi.jetpackcomposeexample.cutomView.MeasuringScaleActivity
+import com.taghavi.jetpackcomposeexample.cutomView.ZoomableActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.layout.ViewLayoutConfigurationsActivity
@@ -165,10 +166,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, BackPressActivity::class.java))
     }
 
-//    fun startZoomableExample(view: View) {
-//        startActivity(Intent(this, ZoomableActivity::class.java))
-//    }
-//
+    fun startZoomableExample(view: View) {
+        startActivity(Intent(this, ZoomableActivity::class.java))
+    }
+
 //    fun startComposeNavigationExample(view: View) {
 //        startActivity(Intent(this, ComposeNavigationActivity::class.java))
 //    }
