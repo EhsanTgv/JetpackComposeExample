@@ -93,4 +93,5 @@
     <string name="title_activity_custom_view">CustomViewActivity</string>
     <string name="title_activity_measuring_scale">MeasuringScaleActivity</string>
     <string name="title_activity_zoomable">ZoomableActivity</string>
+    <string name="title_activity_custom_view_paint">CustomViewPaintActivity</string>
 </resources>

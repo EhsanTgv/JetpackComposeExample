@@ -201,24 +201,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-        <!--        <androidx.cardview.widget.CardView-->
-        <!--            android:id="@+id/load_custom_view_paint_example"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="@dimen/cardview_height"-->
-        <!--            android:layout_marginTop="@dimen/default_padding"-->
-        <!--            android:onClick="startCustomViewPaintExample"-->
-        <!--            android:padding="@dimen/default_padding"-->
-        <!--            app:cardBackgroundColor="@color/colorPrimary"-->
-        <!--            app:cardCornerRadius="@dimen/card_corner_radius">-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load_custom_view_paint_example"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_height"
+            android:layout_marginTop="@dimen/default_padding"
+            android:onClick="startCustomViewPaintExample"
+            android:padding="@dimen/default_padding"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
-        <!--            <TextView-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:fontFamily="monospace"-->
-        <!--                android:text="@string/tv_custom_view_paint_example"-->
-        <!--                android:textColor="@color/white" />-->
-        <!--        </androidx.cardview.widget.CardView>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:text="@string/tv_custom_view_paint_example"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_measuring_scale_example"

@@ -9,6 +9,7 @@ import com.taghavi.jetpackcomposeexample.animation.Animation2Activity
 import com.taghavi.jetpackcomposeexample.animation.ListAnimationActivity
 import com.taghavi.jetpackcomposeexample.animation.TextAnimationActivity
 import com.taghavi.jetpackcomposeexample.cutomView.CustomViewActivity
+import com.taghavi.jetpackcomposeexample.cutomView.CustomViewPaintActivity
 import com.taghavi.jetpackcomposeexample.cutomView.MeasuringScaleActivity
 import com.taghavi.jetpackcomposeexample.cutomView.ZoomableActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
@@ -78,9 +79,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, CustomViewActivity::class.java))
     }
 
-//    fun startCustomViewPaintExample(view: View) {
-//        startActivity(Intent(this, CustomViewPaintActivity::class.java))
-//    }
+    fun startCustomViewPaintExample(view: View) {
+        startActivity(Intent(this, CustomViewPaintActivity::class.java))
+    }
 
     fun startAutofillTextExample(view: View) {
         startActivity(Intent(this, TextFieldActivity::class.java))
