@@ -15,6 +15,9 @@
         android:theme="@style/Theme.JetpackComposeExample"
         tools:targetApi="31">
         <activity
+            android:name=".interop.ComposeInClassicAndroidActivity"
+            android:exported="false" />
+        <activity
             android:name=".cutomView.CustomViewPaintActivity"
             android:exported="false"
             android:label="@string/title_activity_custom_view_paint"

@@ -12,6 +12,12 @@
         android:orientation="vertical"
         android:padding="@dimen/default_padding">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="startComposeWithClassicAndroidExample" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/simple_text_example"
             android:layout_width="match_parent"
@@ -581,24 +587,24 @@
                 android:textColor="@color/white" />
         </androidx.cardview.widget.CardView>
 
-        <!--        <androidx.cardview.widget.CardView-->
-        <!--            android:id="@+id/load_compose_classic_android_example"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="@dimen/cardview_height"-->
-        <!--            android:layout_marginTop="@dimen/default_padding"-->
-        <!--            android:onClick="startComposeWithClassicAndroidExample"-->
-        <!--            android:padding="@dimen/default_padding"-->
-        <!--            app:cardBackgroundColor="@color/colorPrimary"-->
-        <!--            app:cardCornerRadius="@dimen/card_corner_radius">-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/load_compose_classic_android_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cardview_height"
+                    android:layout_marginTop="@dimen/default_padding"
+                    android:onClick="startComposeWithClassicAndroidExample"
+                    android:padding="@dimen/default_padding"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/card_corner_radius">
 
-        <!--            <TextView-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center"-->
-        <!--                android:fontFamily="monospace"-->
-        <!--                android:text="@string/tv_compose_classic_example"-->
-        <!--                android:textColor="@color/white" />-->
-        <!--        </androidx.cardview.widget.CardView>-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="monospace"
+                        android:text="@string/tv_compose_classic_example"
+                        android:textColor="@color/white" />
+                </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/load_back_press_example"

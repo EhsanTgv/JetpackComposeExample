@@ -13,6 +13,7 @@ import com.taghavi.jetpackcomposeexample.cutomView.CustomViewPaintActivity
 import com.taghavi.jetpackcomposeexample.cutomView.MeasuringScaleActivity
 import com.taghavi.jetpackcomposeexample.cutomView.ZoomableActivity
 import com.taghavi.jetpackcomposeexample.image.ImageActivity
+import com.taghavi.jetpackcomposeexample.interop.ComposeInClassicAndroidActivity
 import com.taghavi.jetpackcomposeexample.layout.LayoutModifierActivity
 import com.taghavi.jetpackcomposeexample.layout.ViewLayoutConfigurationsActivity
 import com.taghavi.jetpackcomposeexample.material.AlertDialogActivity
@@ -155,9 +156,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, CoroutineFlowActivity::class.java))
     }
 
-//    fun startComposeWithClassicAndroidExample(view: View) {
-//        startActivity(Intent(this, ComposeInClassicAndroidActivity::class.java))
-//    }
+    fun startComposeWithClassicAndroidExample(view: View) {
+        startActivity(Intent(this, ComposeInClassicAndroidActivity::class.java))
+    }
 
     fun startMeasuringScaleExample(view: View) {
         startActivity(Intent(this, MeasuringScaleActivity::class.java))
