@@ -23,6 +23,7 @@ import com.taghavi.jetpackcomposeexample.material.DrawerAppActivity
 import com.taghavi.jetpackcomposeexample.material.FixedActionButtonActivity
 import com.taghavi.jetpackcomposeexample.material.MaterialActivity
 import com.taghavi.jetpackcomposeexample.material.ShadowActivity
+import com.taghavi.jetpackcomposeexample.navigation.ComposeNavigationActivity
 import com.taghavi.jetpackcomposeexample.stack.StackActivity
 import com.taghavi.jetpackcomposeexample.state.ProcessDeathActivity
 import com.taghavi.jetpackcomposeexample.state.StateActivity
@@ -172,7 +173,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ZoomableActivity::class.java))
     }
 
-//    fun startComposeNavigationExample(view: View) {
-//        startActivity(Intent(this, ComposeNavigationActivity::class.java))
-//    }
+    fun startComposeNavigationExample(view: View) {
+        startActivity(Intent(this, ComposeNavigationActivity::class.java))
+    }
 }
